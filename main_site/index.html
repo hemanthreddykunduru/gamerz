@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gamerZ _future of games</title>
+    <link rel="icon" type="image/x-icon" href="./images//logo.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            background-color: #1a1a1a;
+            z-index: 1;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1rem 2rem;
+            background: rgba(26, 26, 26, 0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #6b8afd;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-family: 'Poppins';
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: #888;
+            max-width: 600px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 4rem 0;
+            color: #fff;
+        }
+
+        .cards-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            z-index: 2;
+            position: relative;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .card h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            color: #888;
+        }
+
+        .testimonials {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .testimonial {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .testimonial p {
+            color: #888;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+                padding: 0 1rem;
+            }
+        }
+        #home_col1 {
+            color: #6b8afd;
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/logo.png" alt="Logo" style="width:90px; height:90px;">
+        </div>
+        <div class="nav-links">
+            <a id="home_col1" href="./index.html">HOME</a>
+            <a href="./products.html">PROJECTS</a>
+            <a href="./about.html">ABOUT</a>
+            <a href="./contact.html">CONTACT</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Gamerz.!</h1>
+        <p>__future of games.</p>
+    </section>
+
+    <h2 class="section-title">Why GamerZ🤔?</h2>
+
+    <div class="cards-container">
+        <div class="card">
+            <img src="./images/1.gif" alt="AI Workflow">
+            <h3>What makes us unique?</h3>
+            <p>We blend high-resolution graphics with innovative gameplay, creating a seamless fusion of art and technology. Every detail is crafted to stand out, offering a gaming experience you won’t find anywhere else.</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/2.jpeg" alt="AI Innovation">
+            <h3>How is it innovative?</h3>
+            <p>It introduces groundbreaking mechanics, dynamic storytelling, and adaptive AI that tailors the experience to each player. The game leverages cutting-edge 4K technology for unparalleled realism and interactivity.</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/3.jpeg" alt="AI Tools">
+            <h3>How does it excel?</h3>
+            <p>Our game excels with stunning 4K visuals, smooth performance, and an immersive world built for both casual and hardcore gamers. Optimized for the latest hardware, it delivers unmatched detail and fluid gameplay.</p>
+        </div>
+    </div>
+
+    <h2 class="section-title">Why Choose GamerZ for Your Next Game?
+    </h2>
+
+    <div class="testimonials">
+        <div class="testimonial">
+            <p>❝ Unmatched 4K Quality – Crystal-clear visuals that bring every detail to life.</p>
+        </div>
+
+        <div class="testimonial">
+            <p>❝ Innovative Gameplay – Unique mechanics that redefine how you play.</p>
+        </div>
+
+        <div class="testimonial">
+            <p>❝ Immersive Storytelling – Deep, engaging narratives tailored to your choices.</p>
+        </div>
+        <div class="testimonial">
+            <p>❝ Seamless Performance – Optimized for smooth, lag-free gaming on all platforms.</p>
+        </div>
+        <div class="testimonial">
+            <p>❝ Player-Centric Design – Crafted with gamers’ feedback for a superior experience.</p>
+        </div>
+        <div class="testimonial">
+            <p>❝ Gamerz isn’t just a game—it’s a revolution.</p>
+        </div>
+    </div>
+
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 80,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: '#4169E1'
+                },
+                shape: {
+                    type: 'circle'
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false
+                },
+                size: {
+                    value: 3,
+                    random: true
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#4169E1',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'grab'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        });
+
+        // Add scroll effect for navbar
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.backgroundColor = 'rgba(26, 26, 26, 0.95)';
+            } else {
+                navbar.style.backgroundColor = 'rgba(26, 26, 26, 0.9)';
+            }
+        });
+    </script>
+    <a href='http://www.freevisitorcounters.com'></a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=ba9ffe3a056e272cd7927b9ed241ff6246455f7c'></script>
+    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1280216/t/5"></script>
+</body>
+</html>

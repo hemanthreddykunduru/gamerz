@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echoes of the Pharaohs</title>
+    <link rel="icon" type="image/x-icon" href="assets/pngwing.com.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background: linear-gradient(180deg, #000000 0%, #2c2c2c 50%, #1a1a1a 100%); /* Gradient black */
+            color: white;
+        }
+        
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(26, 26, 26, 0.9);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: grey;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .product-section {
+            margin-bottom: 4rem;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .product-content {
+            flex: 1;
+        }
+
+        .character-images {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .character {
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 280px;
+        }
+
+        .character img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 4px solid #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .character img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .character h3 {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            color: #f0f0f0;
+        }
+
+        .character p {
+            color: #dcdcdc;
+            font-size: 1rem;
+        }
+
+        .video-container {
+            position: relative;
+            max-width: 100%;
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        video {
+            width: 80%;
+            border-radius: 8px;
+        }
+
+        .play-pause-btn {
+            margin-top: 1rem;
+            padding: 0.8rem 5rem;
+            background: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .play-pause-btn:hover {
+            background: #005bb5;
+        }
+
+        .info-trigger,
+        .download-trigger {
+            margin-top: 1rem;
+            padding: 0.8rem 5rem;
+            background: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .info-trigger:hover,
+        .download-trigger:hover {
+            background: #005bb5;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: #f0f0f0;
+        }
+
+        /* Popup Styles */
+        /* Specifications Section */
+        .specifications {
+            background: transparent;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+        }
+
+        .specifications h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .specifications-content {
+            display: none;
+            padding-left: 20px;
+            color: #dcdcdc;
+        }
+
+        .specifications h3:hover {
+            color: #6b8afd;
+        }
+
+        .specifications h3:hover + .specifications-content {
+            display: block;
+        }
+
+        .specifications ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .specifications li {
+            margin-bottom: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .product-section {
+                flex-direction: column;
+            }
+
+            .character-images {
+                flex-direction: column;
+            }
+        }
+        #project_col1{
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/logo.png" alt="Logo" style="width:90px; height:90px;">
+        </div>
+        <div class="nav-links">
+            <a href="./index.html">HOME</a>
+            <a id="project_col1" href="./products.html">PROJECTS</a>
+            <a href="./about.html">ABOUT</a>
+            <a href="./contact.html">CONTACT</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="product-section">
+            <div class="product-content">
+                <p></p>
+                <h2>★  Echoes of the Pharaohs</h2>
+                <p>Step into a world of ancient Egypt, filled with adventure, mystery, and AI-based warfare. Explore vast deserts, uncover forgotten treasures, and engage in strategic battles to restore peace to a land in turmoil. Join the epic journey today!</p>
+            </div>
+        </section>
+
+        <div class="character-images">
+            <div class="character">
+                <h3>Captain Branford</h3>
+                <p></p>
+                <img src="./assets/pirate -1.png" alt="Captain Branford">
+                <p></p>
+                <p>A retired pirate captain with a legendary past. He now lives a quiet life but is always ready to offer his wisdom and skills to those in need.</p>
+            </div>
+
+            <div class="character">
+                <h3>Dreadlord Kaelgrim</h3>
+                <p></p>
+                <img src="./assets/pirate -2.png" alt="Dreadlord Kaelgrim">
+                <p></p>
+                <p>A ruthless pirate warlord, feared across the seas. His reign of terror has left many in fear, and only a warrior of great strength can challenge him.</p>
+            </div>
+
+            <div class="character">
+                <h3>Ronan Veyne</h3>
+                <p></p>
+                <img src="./assets/pirate -3.png" alt="Ronan Veyne">
+                <p></p>
+                <p>A fearless warrior with a mysterious past, destined to face Kaelgrim and protect the innocent from his reign of tyranny.</p>
+            </div>
+        </div>
+
+        <div class="specifications">
+            <h3>◆ Climbing & Motion Warping</h3>
+            <div class="specifications-content">
+                <p>➥ Experience true physical interaction as you climb structures and warp through motion to explore the vast desert environment.</p>
+            </div>
+
+            <h3>◆ AI Combat</h3>
+            <div class="specifications-content">
+                <p>➥ Distract AI enemies with throwable stones or engage in direct combat using weapons like swords, bows, shields, and more.</p>
+            </div>
+
+            <h3>◆ Animals & Mounts</h3>
+            <div class="specifications-content">
+                <p>➥ Ride majestic desert creatures such as camels, rhinos, and elephants to traverse the open world.</p>
+            </div>
+
+            <h3>◆ Realistic Day-Night Cycle</h3>
+            <div class="specifications-content">
+                <p>➥ A fully dynamic, 24/7 real-time sun cycle, affecting gameplay and strategies. Day turns into night with stunning, realistic lighting.</p>
+            </div>
+
+            <h3>◆ Pet Companions</h3>
+            <div class="specifications-content">
+                <p>➥ Take care of your loyal fox companion that follows you or a crow that aids when your stamina is low.</p>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <iframe id="gameTrailer" width="100%" height="500" src="https://www.youtube.com/embed/glGmE3Xavkk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <button sr="https://drive.google.com/drive/folders/1FlNCsygxX_Cl3Y3osfmn17BHHTI_v88C?usp=drive_link" class="download-trigger">Download v1.0.0</button>
+        </div>
+        
+    </div>
+
+    <footer style="padding: 20px 0; text-align: center;">
+        <p style="align-content: left;">© 2025 GamerZ</p>
+    </footer>
+
+    <script>
+        const video = document.getElementById('gameTrailer');
+
+
+        const infoTrigger = document.querySelector('.download-trigger');
+
+        infoTrigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            infoPopup.style.display = 'block';
+            setTimeout(() => infoPopup.style.display = 'none', 3000);
+        });
+        const downloadTrigger = document.querySelector('.download-trigger');
+    
+    downloadTrigger.addEventListener('click', () => {
+        const link = document.createElement('a');
+        link.href = 'https://drive.google.com/drive/folders/1FlNCsygxX_Cl3Y3osfmn17BHHTI_v88C?usp=drive_link';
+        link.target = '_blank'; // Opens in a new tab
+        link.click();
+    });
+    </script>
+</body>
+</html>
