@@ -289,7 +289,13 @@
         <div class="video-container">
             <iframe id="gameTrailer" width="100%" height="500" src="https://www.youtube.com/embed/glGmE3Xavkk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <button src="https://drive.google.com/drive/folders/1FlNCsygxX_Cl3Y3osfmn17BHHTI_v88C?usp=drive_link" class="download-trigger">Download v1.0.0</button>
-            <button href="https://1024terabox.com/s/1m--NbVcBN0r4ShM_1_I_-A" class="download-trigger">Download Source Files</button>
+            <button id="downloadButton">Download Source Files</button>
+
+<script>
+  document.getElementById('downloadButton').addEventListener('click', function() {
+    window.location.href = "https://1024terabox.com/s/1m--NbVcBN0r4ShM_1_I_-A";
+  });
+</script>
         </div>
         </div>
         <br>
